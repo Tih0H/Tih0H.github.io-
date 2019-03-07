@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,KAAK,CAAC;EACL,OAAO,EAAE,MAAM;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_colors.sass",
+        "../sass/_hero.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
