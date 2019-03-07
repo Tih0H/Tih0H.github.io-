@@ -34,6 +34,7 @@ body {
 img {
   /*width: 100%;*/
   /*display: inline-block;*/
+  border: none;
 }
 
 
@@ -263,7 +264,7 @@ img {
 }
 
 .offer-bottom {
-  margin-top: 15px;
+  margin: 17px 0;
   display: flex;
   justify-content: space-between;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
@@ -286,11 +287,14 @@ img {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: -15px;
+  /*margin-top: -15px;*/
+  color: #333333;
+  text-decoration: none;
 }
 
 .offer__text {
   margin-top: 11px;
+  margin-bottom: 0;
 }
 
 /*----------------------  блок портфолио -----------------------*/
@@ -501,7 +505,7 @@ img {
   position: relative; 
   margin: auto;
   min-width: 450px; 
-  width: 90%; 
+  width: 40%; 
   min-width: 200px; 
   background-color: #fff;
   padding: 40px;  
@@ -510,7 +514,9 @@ img {
     position: absolute;
     top: 0px; 
     right: 0px; 
-
+}
+.modal-dialog__close:hover {
+  cursor: pointer;
 }
 /*
 
@@ -530,16 +536,19 @@ button.addEventListener('click', function() {
   }
   .hero-block {
     flex-direction: column;
+    align-items: center;
   }
   .hero-list {
     margin-bottom: 44px;
   }
   .hero-text {
-    padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
-  /*.hero-image {
-    width: 95%;
-  }*/
+  .hero-image {
+    width: 60%;
+  }
   .offer {
     background-size: cover;
   }
@@ -549,6 +558,9 @@ button.addEventListener('click', function() {
   }
   .offer__button {
     font-style: 12px;
+  }
+  .slider__item img {
+    width: 95%;
   }
   .steps-block{
     justify-content: center;
@@ -565,6 +577,16 @@ button.addEventListener('click', function() {
     width: auto;
   }
 
+}
+@media (max-width: 850px){
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price__card {
+    max-width: 370px;
+  /*  margin-left: 3%;  */
+  }
 }
 
 @media (max-width: 768px) {
@@ -601,13 +623,20 @@ button.addEventListener('click', function() {
     width: 100%;
     padding-right: 0;
   }
+  .portfolio {
+  background: #f5f5f5  
+  }
+  
   .steps-block{
     flex-direction: column;
   }
   .step:after {
     display: none;
   }
-  
+  .steps-block {
+    display: block;
+  }
+
 }
 
 @media (max-width: 567px) {
@@ -652,7 +681,9 @@ button.addEventListener('click', function() {
   .hero-list {
     margin-bottom: 35px;
   }
-  
+  .hero-image {
+    width: 100%;
+  }
   .hero-list__text {
     max-width: 200px;
   }
@@ -709,6 +740,9 @@ button.addEventListener('click', function() {
   .portfolio__arrows {
     margin: 46px auto 32px;
   }
+  .slider__item img {
+    width: 100%;
+  }
   .slider__image {
     width: 246px;
     height: 186px;
@@ -732,9 +766,7 @@ button.addEventListener('click', function() {
     margin: 20px auto 8px;
     line-height: 22px;
   }
-  .steps-block {
-    display: block;
-  }
+
   .steps__subtitle {
     margin-bottom: 20px;
   }
