@@ -34,7 +34,7 @@ body {
 img {
   /*width: 100%;*/
   /*display: inline-block;*/
-  border: none;
+  border: 0px;
 }
 
 
@@ -325,12 +325,14 @@ img {
 .arrows__right:hover {
   cursor: pointer;
 }
-
 .slider__image {
   margin: auto;
   max-width: 370px;
   max-height: 280px;
-}
+ }
+ .slider__item {
+  outline: 0;
+ }
 
 /*---------------------- блок price-----------------------*/
 
