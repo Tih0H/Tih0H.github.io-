@@ -1,0 +1,261 @@
+/*---------------------- блок подвала -----------------------*/
+.contacts-map {
+    position: relative;
+}
+
+.ymap-container {
+    position: relative;
+    /*margin: 3em 0 2em 0;*/
+    overflow: hidden;
+    cursor: pointer;
+    background: url("../img/yandex-before-load.jpg") #ffffff no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+
+#map-yandex {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    height: 26em;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+    position: absolute;
+    z-index: 15;
+    top: -100%;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #000000;
+    -webkit-transition: opacity .7s ease;
+    transition: opacity .7s ease;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader:after,
+.loader:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.loader.is-active {
+    top: 0;
+    opacity: 1;
+}
+
+.loader-default:after {
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    content: '';
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    border: solid 8px #ffffff;
+    border-left-color: transparent;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes blink {
+    from {
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: .5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.map {
+    /*background-image: url("../img/yamap.jpg");*/
+    width: 65%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.container-map {
+    max-width: 1163px;
+    margin: auto;
+}
+.contacts {
+    padding-left: 38px;
+    margin-bottom: 20px;
+}
+
+.contacts-1 {
+    flex-basis: 34%;
+    padding: 89px 0px 106px 0px;
+}
+
+.contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.contacts-list__map {
+    padding: 0;
+    list-style: none;
+    margin-left: 12px;
+}
+
+.contacts__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 27px;
+}
+
+.contacts-icon {
+    width: 20px;
+    line-height: 2;
+    margin-right: 20px;
+}
+.contacts__text {
+    font-family: Light;
+    font-size: 14px;
+    line-height: 20px;
+}
+.contacts__text-bold {
+    max-width: 275px;
+    margin-bottom: -4px;
+}
+.list__text-bold {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contacts__phone {
+    display: inline-block;
+    color: #363636;
+    font-family: Light;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px -2px;
+    text-decoration: none;
+}
+
+.contacts-title {
+    color: #464646;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 30px 0 0 0;
+}
+
+.contacts-subtitle {
+    color: #464646;
+    font-family: Light;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 11px 0 0 0;
+}
+
+.office-location {
+    color: #464646;
+    font-family: Light;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 31px 0 19px 0;
+}
+
+@media (max-width: 766px) {
+    .contacts {
+        padding-left: 0;
+    }
+    .contacts-map {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .map {
+            position: static;
+            width: 100%;
+    }
+    .contacts-block {
+        justify-content: center;
+    }
+    .contacts-1 {
+        padding: 0;
+        flex-basis: 100%;
+
+    }
+}
+
+@media (max-width: 567px) {
+    .contacts-title {
+        font-size: 20px;
+        margin: 15px 0 0 -2px;
+    }
+    .contacts-subtitle{
+        margin: 3px 0 0 0;
+    }
+    .office-location {
+        font-size: 16px;
+        margin: 12px 0 0 0;
+    }
+    
+    .contacts-list__map {
+        margin-top: 7px;
+        margin-left: 0;
+    }
+    #map-yandex {
+        height: 27em;
+    }
+    .contacts {
+        margin-bottom: 33px;
+    }
+    
+}

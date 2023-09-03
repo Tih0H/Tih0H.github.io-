@@ -1,0 +1,232 @@
+.main
+    background-image: url('../img/main-background.jpg')
+    background-color: #eaf6f9
+    background-size: 136%
+    background-repeat: no-repeat
+    &-block
+        display: flex
+        padding-top: 30px
+        padding-bottom: 35px
+    &-about
+        margin-right: 50px
+        padding-left: 25px
+    &-title
+        font-family: Light
+        color: #009ac0
+        font-size: 30px
+        font-weight: 300
+        line-height: 33px
+        margin: 55px 12px -5px 0
+    &-subtitle
+        font-family: Light
+        color: #363636
+        font-size: 18px
+        font-weight: 300
+        line-height: 24px
+        margin-bottom: 37px
+    &__input
+        width: 220px
+        height: 45px
+        border: 1px solid rgba(0, 0, 0, 0.05)
+        // background-color: #ffffff
+        // color: #363636
+        font-family: Light
+        font-size: 13px
+        // font-weight: 300
+        // line-height: 33px
+        display: inline-block
+        border-radius: 20px
+        padding-left: 15px
+        margin-top: 8px
+
+    &__button
+        margin-top: 14px
+        padding: 14px 35px
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 700
+        line-height: 21.47px
+        text-transform: uppercase
+    &__additional
+        display: inline-block
+        color: #009ac0
+        font-family: Light
+        font-size: 13px
+        font-weight: 500
+        line-height: 24px
+        text-transform: uppercase
+        border-bottom: 2px dotted #009ac0
+        margin-left: 55px
+        text-decoration: none
+
+    &-list
+        display: inline-block
+        // width: 240px
+        // height: 34px
+        // overflow: hidden
+        background: url('../img/rounded.png') no-repeat right white
+        // background-size: 10%
+        position: relative
+        border-radius: 20px
+        border: 1px solid rgba(0, 0, 0, 0.05)
+        // padding-left: 8px
+        & select
+            outline: 0
+            background: transparent
+            width: 210px
+            height: 45px
+            padding-left: 12px
+            // line-height: 1
+            border: 0
+            // border-radius: 0
+            // height: 34px
+            -webkit-appearance: none
+            font-family: Light
+            color: #999
+            font-size: 13px
+        & option
+            color: #363636
+
+.error
+    border: 1px solid red !important
+    color: red
+    padding: 3px
+    border-radius: 20px
+    margin-top: 8px
+
+
+.extra
+    &-block
+    margin-top: 10px
+    flex-direction: column;
+    &__input
+        width: 221px
+        height: 45px
+        border: 2px solid rgba(0, 0, 0, 0.05)
+        font-family: Light
+        font-size: 13px
+        display: inline-block
+        border-radius: 20px
+        padding-left: 15px
+        margin-right: 4px
+
+        &:first-child
+            margin-bottom: 12px
+
+
+.news 
+  text-align: center
+  padding: 30px  0 122px
+.news-container
+    padding-left: 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+.news-block
+    padding-left: 17px
+    max-width: 550px
+.news-title 
+  color: #363636
+  font-family: Light
+  font-size: 22px
+  font-weight: 400
+  line-height: 22px
+  margin-bottom: 0
+
+.news__date 
+  color: #8a8a8a
+  font-family: Light
+  font-size: 14px
+  font-weight: 300
+  margin-bottom: 3px
+  margin-top: 30px
+
+.news__subtitle 
+  font-weight: 400
+  color: #009ac0
+  font-size: 15px
+.none
+    display: none
+
+@media (min-width: 992px) 
+    .button:hover 
+        cursor: pointer
+        background-color: #6ca322
+    
+    .main__additional:hover 
+        cursor: pointer
+        
+    .main-list select
+        cursor: pointer
+
+@media (max-width: 1200px)
+    .main-about 
+        margin-right: 0
+        padding-left: 43px
+    .error
+        font-size: 12px
+
+@media (max-width: 992px)
+    .container
+        width: 95%
+    .navbar-contacts
+        display: none
+    .main-picture
+        display: none
+
+@media (max-width: 576px)
+    .main-title
+        font-family: Medium
+        font-size: 18px
+        font-weight: 500
+        line-height: 20px
+        text-align: center
+        margin: 0 14px 0 0
+    .none
+        display: contents
+    .main-subtitle
+        font-size: 14px
+        line-height: 19px
+        margin-bottom: 37px
+        margin: 11px 13px 16px 0
+        text-align: center
+    .main-about
+        padding-left: 13px
+    .main-form__block
+        margin-left: 25px
+    .main__input
+        margin-bottom: 1px
+        height: 40px
+        margin-bottom: 5px
+    .main__button
+        padding: 14px 33px
+        margin-left: 21px
+        font-size: 13px
+        font-family: Medium
+
+    .main__additional
+        margin: 14px -8px
+        font-size: 12px
+    .news 
+        padding: 15px 0
+    .news-container
+        padding-left: 0
+    .news-title
+        font-size: 18px
+        font-family: Medium
+        margin-bottom: 16px
+    .news-block
+        padding-left: 5px
+        text-align: initial
+    .news__date
+        margin-top: 0
+        margin-bottom: 0
+    .news__subtitle
+        display: inline-block
+        font-size: 16px
+        font-family: Roboto
+        font-weight: 600
+        margin-bottom: 20px
+        line-height: 23px
+    .extra__input
+        margin-bottom: 6px

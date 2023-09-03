@@ -1,0 +1,112 @@
+.small-size
+    display: none
+
+.reviews
+    &-title
+        text-align: center
+        color: #363636
+        font-family: Light
+        font-size: 24px
+        font-weight: 400
+        line-height: 22px
+        margin: 85px auto 41px
+
+    &-carts
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 34px
+    &-cart
+        display: flex
+        margin: -4px 9px 46px 26px
+        img
+            max-width: 111px
+            max-height: 111px
+            
+.people-cart
+    background-image: url('../img/massage-fon.png')
+    max-width: 430px
+    padding-left: 46px
+    padding-top: 2px
+    margin-left: 5px
+
+.people__name
+    font-size: 17px
+    font-weight: 500
+    line-height: 25px
+    margin-bottom: 0
+
+.people__massage
+    font-family: Light
+    font-weight: 300
+    font-size: 15px
+    font-weight: 300
+    line-height: 25px
+    margin-top: 4px
+    margin-bottom: 26px
+
+.slider-block 
+    max-width: 500px
+
+.reviews__arrows
+    display: flex
+    justify-content: space-between
+    position: relative
+    top: -267px
+    max-width: 230px
+    padding: 0 5px 0 36px
+
+.slider-block
+    background: url(../img/backgroun-slider-people.png) no-repeat bottom
+    background-position-y: 106px
+    max-width: 263px
+
+
+@media (max-width: 1200px) 
+    .small-size
+        display: block
+        max-width: 263px
+        margin: 0 auto
+    .small-slider
+        display: flex
+        justify-content: center
+        padding-bottom: 50px
+        padding-bottom: 32px
+    .full-size
+        display: none
+    .slick-initialized .slick-slide 
+        display: flex
+
+    .slider-people
+        
+        flex-direction: column
+        align-items: center
+    .slider-people__cart
+        display: flex
+        flex-direction: column
+        align-items: center
+    .slider-people__massage
+        margin: 0 50px
+        font-size: 17px
+        font-weight: 300
+        line-height: 22px
+        text-align: center
+        font-family: Light
+        margin: 3px 3px
+        max-width: 254px
+
+
+
+@media (max-width: 576px)
+    .reviews-title
+        font-size: 18px
+        font-family: Medium
+        margin: 89px auto 15px
+    .slider-people img
+        max-width: 97px
+    .slider-people__name
+        margin: 43px auto 4px
+   
+
+
+
+
