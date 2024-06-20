@@ -1,0 +1,143 @@
+.navbar
+    &-block
+        display: flex
+        justify-content: space-between
+        padding-bottom: 13px
+    &-contacts
+        display: flex
+        margin-top: 33px
+        margin-left: 10px
+    &__email
+        display: flex
+        height: 24px
+    &__phone
+        margin-right: 32px
+        display: flex
+    &__image
+        height: 30px
+        margin: 3px 11px 0 11px
+    &-logo
+        text-align: center
+        margin-right: 15px
+        &__tagline-top
+            color: $main-color
+            font-size: 13px
+            font-weight: 300
+            line-height: 24px
+            text-transform: uppercase
+            margin: 12px auto 2px
+        &__tagline
+            color: $special-color
+            font-family: Medium
+            font-size: 28px
+            line-height: 24px
+            border-bottom: 2px solid $special-color
+            padding-bottom: 7px
+            width: 118px
+            margin: 0px auto
+            font-family: Century
+
+        &__tagline-bottom
+            color: $main-color
+            font-family: Medium
+            font-size: 15px
+            font-weight: 500
+            line-height: 24px
+            margin: 3px
+    &-buttons
+        margin-top: 35px
+
+.navbar-phone, .email
+    text-decoration: none
+    color: $main-color
+    font-size: 15px
+    line-height: 23px
+    display: block
+    font-family: Light
+.cabinet
+    color: $green-color
+    font-size: 13px
+    font-weight: 300
+    line-height: 24px
+    padding: 2px 15px
+    border: 1px solid $green-color
+    border-radius: 4px
+    background: none
+    margin-right: 13px
+.order
+    width: 164px
+    height: 45px
+    font-size: 12px;
+    text-transform: uppercase
+.img-cabinet 
+    display: none
+.img-order
+    display: none
+   
+
+@media (min-width: 992px) 
+  .cabinet:hover 
+    background-color: #8ec740
+    cursor: pointer
+    color: white
+  .order:hover 
+    opacity: 0.6
+    cursor: pointer
+  
+@media (max-width: 1200px) 
+    .navbar-buttons
+        margin-right: 20px
+
+@media (max-width: 992px)
+    .navbar-contacts
+        display: none
+    .scrollup
+        display: none !important
+    .navbar-buttons
+        margin-right: -24px
+    .cabinet
+        margin-bottom: 10px
+    .order
+        margin-right: 20px
+
+@media (max-width: 576px)
+    .navbar-logo__tagline-top
+        font-size: 9px
+        margin: 9px auto -5px
+        text-align: unset
+    .navbar-logo__tagline
+        font-size: 18px
+        border-bottom: 0px solid #009ac0
+    .navbar-logo__tagline-bottom
+        display: none        
+    .img-cabinet 
+        display: block
+        margin-right: 5px
+    .img-order
+        display: block
+    .cabinet 
+        display: none
+    .order 
+        display: none
+    .navbar-block
+        justify-content: flex-end
+        padding-bottom: 0  
+    .navbar-logo
+        z-index: 10
+        margin-right: 15px
+        text-align: left
+    .navbar-buttons
+        margin-right: 40px
+        z-index: 11
+        margin-top: 15px
+        display: flex
+        height: 30px
+        width: 30px
+        margin-left: 46px
+    .navbar 
+          position: absolute
+          right: 8px
+          width: 253px !important
+    
+
+

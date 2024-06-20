@@ -1,0 +1,72 @@
+@import 'slick';
+@import 'slick-theme';
+.slick-prev{
+  background-image: url('../img/Rounded_left.png');
+  height: 40px;
+}
+.slick-next {
+  background-image: url('../img/Rounded_right.png');
+  height: 40px;
+}
+
+@import 'notmalize';
+@import 'fonts';
+@import 'colors';
+
+
+* {
+  box-sizing: border-box;
+}
+input, button {
+  border: 0;
+}
+body {
+  font-family: Medium;
+  margin: 0px;
+}
+.container {
+  max-width: 1163px;
+  margin: auto;
+}
+.button {
+  background-color: $green-color;
+  color: $wight;
+  font-family: Medium;
+  border-radius: 25px;
+  border: none;
+}
+.scrollup {
+  width: 56px;
+  height: 67px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 96px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../img/icon_top.png') no-repeat;
+}
+.text-bold {
+  font-family: Medium;
+}
+
+@import 'navbar';
+@import 'topmenu';
+@import 'main';
+@import 'service';
+@import 'reviews';
+@import 'you-can';
+
+@import 'about';
+@import 'certificates';
+
+@import 'contacts';
+@import 'questions';
+
+
+@import 'footer';
+@import 'modal';
+
+
+
+    
